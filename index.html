@@ -17,12 +17,36 @@
             <div class="col-4 location-search">
                 <form id="location-search-form">
                     <h4>Search for a City:</h4>
-                    <input id="location" type="text" class="form-input"/>
+                    <input id="location" type="text" class="form-input input-group-append"/>
                     <button class="btn btn-primary" type="submit">Search</button>
                 </form>
+                <div class="card">
+                    <ul class="list-group list-group-flush list"></ul>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row border selected-city" id="current-forecast">
+                    <div class="col-12">
+                        <h2 id="searched-city"></h2>
+                        <div id="current-forecast-container" class="list-group"></div>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col-12">
+                        <h6>5-Day Forecast:</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
+                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
+                </div>
             </div>
         </div>
     </div>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
