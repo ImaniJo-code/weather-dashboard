@@ -26,6 +26,11 @@ var formSumbitHandler = function(event){
   } else{
     alert("Please enter a City");
   }
+  saveLocations();
+}
+
+var saveLocations = function() {
+  localStorage.setItem("locations", JSON.stringify(locations));
 };
 
 var getLocationForecast = function(location){
