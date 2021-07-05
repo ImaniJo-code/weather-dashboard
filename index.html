@@ -14,37 +14,24 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-4 p-2 location-search">
-                <form id="location-search-form">
+            <div class="col-lg-3 pt-3 location-search">
+                <form class="location-search-form">
                     <h4>Search for a City:</h4>
                     <input id="location" type="text" class="form-input input-group-append"/>
-                    <button class="btn btn-primary" type="submit">Search</button>
+                    <button class="btn btn-primary far fa-search" type="submit" id="searchButton">Search</button>
                 </form>
                 <div class="card">
                     <ul class="list-group list-group-flush list"></ul>
                 </div>
             </div>
             <div class="col-12 col-md-9">
-                <div class="row border selected-city" id="current-forecast">
-                    <div class="col-12">
-                        <h2 id="searched-city"></h2>
-                        <div id="current-forecast-container" class="list-group"></div>
-                    </div>
-                </div>
-                <div class="row border">
-                    <div class="col-12">
-                        <h6>5-Day Forecast:</h6>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
-                    <div class="col forecast bg-primary text-white ml-3 mb-3"></div>
-                </div>
+                <div id="currentLocation" class="mt-4"></div>
             </div>
         </div>
+    </div>
+    <div class="col-12 mt-4">
+        <h5 id="forecastTitle" class="mt-3">5-Day Forecast:</h5>
+        <div id="forecast" class="row"></div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./assets/js/script.js"></script>
